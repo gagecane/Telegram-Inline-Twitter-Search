@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Telegram bot token
+token.txt
+
+# Twitter tokens
+consumer_keys.json
