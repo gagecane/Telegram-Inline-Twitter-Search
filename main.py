@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Python-based Telegram bot for @stoobs_ebooks_bot
+"""Python-based Telegram bot
 
 python-telegram-bot documentation: https://python-telegram-bot.readthedocs.io/en/stable/
 
