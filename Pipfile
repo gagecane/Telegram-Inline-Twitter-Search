@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-telegram-bot = "*"
+
+[dev-packages]
+pylint = "*"
+pytest = "*"
+
+[requires]
+python_version = "3.9"
