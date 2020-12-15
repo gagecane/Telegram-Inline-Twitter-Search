@@ -11,6 +11,7 @@ pylint = "*"
 pytest = "*"
 autopep8 = "*"
 pycodestyle = "*"
+rope = "*"
 
 [requires]
 python_version = "3.9"
