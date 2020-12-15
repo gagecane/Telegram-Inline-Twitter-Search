@@ -1,8 +1,6 @@
 dist: xenial # required for Python >= 3.7
 language: python
 python:
-  - "3.4"
-  - "3.5"
   - "3.6"
   - "3.7"
   - "3.8"
@@ -12,6 +10,6 @@ install:
   - pip install pipenv
   - pipenv install --dev
 # command to run tests
-script: pipenv run pytest --cov=src test/
+script: pytest
 after_success:
-  - pipenv run coveralls
+  - coveralls
