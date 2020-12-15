@@ -108,3 +108,6 @@ token.txt
 
 # Twitter tokens
 consumer_keys.json
+
+# VS Code
+/.vscode/settings.json
