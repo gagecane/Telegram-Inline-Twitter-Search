@@ -57,31 +57,31 @@ def inlinequery(update, context):
     update.inline_query.answer(results)
 
 
-def loadToken():
+def load_telegram_bot_token():
     with open("token.txt", 'r') as tokenfile:
         return tokenfile.readlines()[0].strip()
 
 
-def loadKeys(self, keyFile=None):
+def load_keys_from_json(self, key_file=None):
     """Load consumer keys from a json file
 
     Keyword Arguments:
         keyFile {string} -- Optional keyFile name. Will use self.keyFile
-                            if not populatd (default: {None})
+                            if not populated (default: {None})
     """
-    keyFileToLoad = keyFile
-    if (keyFile is None):
-        keyFileToLoad = self.keyFile
+    key_file_to_read = key_file
+    if (key_file is None):
+        key_file_to_read = self.keyFile
     try:
-        with open(keyFileToLoad, 'r') as infile:
-            self.keys = json.load(infile)
+        with open(key_file_to_read, 'r') as open_key_file:
+            self.keys = json.load(open_key_file)
     except TypeError:
         print("Error: expected a string for filename")
     except FileNotFoundError:
-        print("Error: File %s does not exist" % keyFileToLoad)
+        print(f"Error: File {key_file_to_read} does not exist")
 
 
-def loadTwitter():
+def connect_to_twitter():
     """Connect to twitter
     """
     return
@@ -91,7 +91,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater(loadToken(), use_context=True)
+    updater = Updater(load_telegram_bot_token(), use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
