@@ -57,8 +57,8 @@ def inlinequery(update, context):
     update.inline_query.answer(results)
 
 
-def load_telegram_bot_token():
-    with open("token.txt", 'r') as tokenfile:
+def load_bot_token_from_file(filename):
+    with open(filename, 'r') as tokenfile:
         return tokenfile.readlines()[0].strip()
 
 
@@ -91,7 +91,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater(load_telegram_bot_token(), use_context=True)
+    updater = Updater(load_bot_token_from_file("token.txt"), use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
