@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 """Python-based Telegram bot
 
 python-telegram-bot documentation: https://python-telegram-bot.readthedocs.io/en/stable/
@@ -10,10 +8,10 @@ import logging
 
 from uuid import uuid4
 
-from telegram import InlineQueryResultArticle, ParseMode, \
-    InputTextMessageContent
+from telegram import InlineQueryResultArticle, ParseMode, InputTextMessageContent
 from telegram.ext import Updater, InlineQueryHandler, CommandHandler
 from telegram.utils.helpers import escape_markdown
+import json
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -87,6 +85,7 @@ def loadTwitter():
     """Connect to twitter
     """
     return
+
 
 def main():
     # Create the Updater and pass it your bot's token.
