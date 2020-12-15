@@ -8,8 +8,8 @@ import logging
 
 from uuid import uuid4
 
-from telegram import InlineQueryResultArticle, ParseMode, InputTextMessageContent
-from telegram.ext import Updater, InlineQueryHandler, CommandHandler
+from telegram import InlineQueryResultArticle, ParseMode, InputTextMessageContent, Update
+from telegram.ext import Updater, InlineQueryHandler, CommandHandler, CallbackContext
 from telegram.utils.helpers import escape_markdown
 import json
 

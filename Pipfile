@@ -9,6 +9,8 @@ python-telegram-bot = "*"
 [dev-packages]
 pylint = "*"
 pytest = "*"
+autopep8 = "*"
+pycodestyle = "*"
 
 [requires]
 python_version = "3.9"
