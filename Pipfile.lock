@@ -30,7 +30,7 @@
             ],
             "index": "pypi",
             "markers": "python_version >= '3.6'",
-            "version": "==2024.7.4"
+            "version": ">=2024.07.04"
         },
         "python-telegram-bot": {
             "hashes": [
@@ -122,7 +122,7 @@
                 "sha256:dc383c07b76109f368f6106eee2b593b04a011ea4d55f652c6ca24a754d1cdd1"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==2024.2.2"
+            "version": ">=2024.07.04"
         },
         "charset-normalizer": {
             "hashes": [
