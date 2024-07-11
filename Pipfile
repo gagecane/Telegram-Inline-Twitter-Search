@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 python-telegram-bot = "*"
+certifi = ">=2024.07.04"
 
 [dev-packages]
 pylint = "*"
